@@ -3,7 +3,7 @@ const percent = document.querySelector('.percent')
 let opas = 1;
 
 let blur = 30
-let num = 100
+let num = 0
 setInterval(() => {
     blur--;
     
@@ -12,7 +12,7 @@ pic.style.filter = `blur(${blur}px)`
 },150)
 
 setInterval(() => {
-    num--;
+    num++;
     opas -= 0.01;
 
     if (num < 1) {
